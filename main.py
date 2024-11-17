@@ -2,7 +2,7 @@
 
 
 #DAY3 EXERCISE 2
-""" total=0
+total=0
 print("Welcome Python Pizza Deliveries!")
 size=input("What size pizza do you want? S, M or L: ")
 if size=="S" or size=="s":
@@ -15,11 +15,15 @@ else:
     print("see you")
 pepporoni= input("Do you want pepperoni on your pizza? Y or N: ")
 if pepporoni=="Y" or pepporoni=="y":
-    total+=2
+    if size=="S" or size=="s":
+        total+=2
+    elif size=="M" or size=="m" or size=="L" or size=="l":
+        total+=3
 extra_cheese= input("Do you want extra cheese? Y or N: ")
 if extra_cheese=="Y" or extra_cheese=="y":
     total+=1
-print(f"Your final bill is: {total}₺")"""
+print(f"Your final bill is: {total}₺")
+
 
 
 #DAY3 EXERCISE
