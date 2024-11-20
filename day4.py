@@ -1,5 +1,14 @@
-# DAY4 EXERCISE1
+# DAY4 EXERCISE2
 import random
+friends=["Burak","Berk","Batu","Rderin","Tugba","Hakan"]
+randomNumber=random.randint(0,len(friends)-1)
+randomPeople=random.choice(friends)#seçilen yerden random bir elemanı döner.
+print(friends[randomNumber])
+print(randomPeople)
+
+
+# DAY4 EXERCISE1
+""" import random
 
 a = random.randint(1, 10)#başlangıç ve bitiş değeri dahildir.
 b = random.randrange(start=0, stop=17, step=3)#belli bir range aralığı verip sonuncu dahil değil
@@ -9,3 +18,4 @@ print(a)
 print(b)
 print(c)
 print(d)
+ """
