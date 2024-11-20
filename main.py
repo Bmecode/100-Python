@@ -1,6 +1,3 @@
-
-
-
 # DAY3 EXERCISE 2
 total = 0
 print("Welcome Python Pizza Deliveries!")
