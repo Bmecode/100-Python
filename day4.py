@@ -1,11 +1,90 @@
-# DAY4 EXERCISE2
+# DAY4 FINISH
 import random
-friends=["Burak","Berk","Batu","Rderin","Tugba","Hakan"]
-randomNumber=random.randint(0,len(friends)-1)
-randomPeople=random.choice(friends)#seçilen yerden random bir elemanı döner.
+
+rock = """
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+"""
+paper = """
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+"""
+scissors = """
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+"""
+#girdi alma
+user_choose = int(
+    input("What do you choose? Type 0 for Rock, 1 Paper or 2 for Scissors.")
+)
+#seçimi bastırma
+print("Your Choice:")
+if user_choose == 0:
+    print(rock)
+elif user_choose == 1:
+    print(paper)
+elif user_choose == 2:
+    print(scissors)
+
+#doğru girdi varsa pc seçimi üretme
+if user_choose <=2:
+
+    computer_choose = random.randint(0, 2)
+    print("Computer Choice:")
+    if computer_choose == 0:
+        print(rock)
+    elif computer_choose == 1:
+        print(paper)
+    elif computer_choose == 2:
+        print(scissors)
+
+#Sonuçu yazdırma
+if user_choose == 0:
+    if computer_choose == 0:
+        print("Draw")
+    elif computer_choose == 1:
+        print("Lose")
+    elif computer_choose == 2:
+        print("Win")
+elif user_choose == 1:
+    if computer_choose == 0:
+        print("Win")
+    elif computer_choose == 1:
+        print("Draw")
+    elif computer_choose == 2:
+        print("Lose")
+elif user_choose == 2:
+    if computer_choose == 0:
+        print("Lose")
+    elif computer_choose == 1:
+        print("Win")
+    elif computer_choose == 2:
+        print("Draw")
+else:
+    print("Wrong input!")
+
+
+# DAY4 EXERCISE2
+""" import random
+
+friends = ["Burak", "Berk", "Batu", "Rderin", "Tugba", "Hakan"]
+randomNumber = random.randint(0, len(friends) - 1)
+randomPeople = random.choice(friends)  # seçilen yerden random bir elemanı döner.
 print(friends[randomNumber])
 print(randomPeople)
-
+ """
 
 # DAY4 EXERCISE1
 """ import random
